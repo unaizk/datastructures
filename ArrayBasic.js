@@ -136,3 +136,17 @@ function movezerotoend(arr){
 console.log('Move zero to end Efficient method');
 console.log(movezerotoend([7,0,20,0,0,30,10]));
 console.log('-------------------------------');
+
+// Left Rotate by one Efficient method
+function leftRotateByOne(arr){
+    let x = arr[0]
+    for(let i=1; i<arr.length; i++){
+        arr[i-1] = arr[i]
+    }
+    arr.push(x)
+    return arr
+    
+}
+console.log('Left Rotate by one Efficient method');
+console.log(leftRotateByOne([7,0,20,0,0,30,10]));
+console.log('-------------------------------');
