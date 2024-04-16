@@ -66,3 +66,73 @@ function isSorted1(arr){
 console.log('Finding sorted or not Efficient solution');
 console.log(isSorted1([7,20,30,10]));
 console.log('-------------------------------');
+
+
+// Array traversal Naive method
+function traversal(arr){
+    let temp = []
+    for(let i=arr.length-1; i>=0; i--){
+       temp.push(arr[i])
+    }
+    return temp
+    
+    
+}
+console.log('Array traversal Naive method');
+console.log(traversal([7,20,30,10]));
+console.log('-------------------------------');
+
+// Array traversal Efficient method
+function traversal1(arr){
+    let start = 0;
+    let end = arr.length-1
+    while(start < end){
+        [arr[start], arr[end]] = [arr[end], arr[start]];
+        start ++;
+        end --
+    }
+    return arr
+    
+    
+}
+console.log('Array Traversal Efficient method');
+console.log(traversal1([7,20,30,10]));
+console.log('-------------------------------');
+
+
+// Move zero to end naiv method
+function movezerotoend(arr){
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] === 0){
+            for(let j = i+1; j<arr.length ; j++){
+                if(arr[j]!=0){
+                    [arr[i],arr[j]] = [arr[j],arr[i]]
+                    break;
+                }
+            }
+        }
+    }
+    return arr
+    
+    
+}
+console.log('Move zero to end naiv method');
+console.log(movezerotoend([7,0,20,0,0,30,10]));
+console.log('-------------------------------');
+
+// Move zero to end Efficient method
+function movezerotoend(arr){
+    let count = 0
+    for(let i=0; i<arr.length; i++){
+       if(arr[i] !=0){
+            [arr[i],arr[count]] = [arr[count],arr[i]];
+            count ++
+       }
+    }
+    
+    return arr
+    
+}
+console.log('Move zero to end Efficient method');
+console.log(movezerotoend([7,0,20,0,0,30,10]));
+console.log('-------------------------------');
