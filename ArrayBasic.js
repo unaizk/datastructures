@@ -35,6 +35,8 @@ console.log('Lragest Number Index Efficient solution');
 console.log(largest1([5, 10, 8, 600, 30, 80])); 
 console.log('-------------------------------');
 
+
+//======================================================================================================================================================
 // Check array is sorted in Naive way
 
 function isSorted(arr){
@@ -68,6 +70,8 @@ console.log(isSorted1([7,20,30,10]));
 console.log('-------------------------------');
 
 
+//======================================================================================================================================================
+
 // Array traversal Naive method
 function traversal(arr){
     let temp = []
@@ -99,6 +103,8 @@ console.log('Array Traversal Efficient method');
 console.log(traversal1([7,20,30,10]));
 console.log('-------------------------------');
 
+
+//======================================================================================================================================================
 
 // Move zero to end naiv method
 function movezerotoend(arr){
@@ -137,6 +143,9 @@ console.log('Move zero to end Efficient method');
 console.log(movezerotoend([7,0,20,0,0,30,10]));
 console.log('-------------------------------');
 
+
+
+//======================================================================================================================================================
 // Left Rotate by one Efficient method
 function leftRotateByOne(arr){
     let x = arr[0]
