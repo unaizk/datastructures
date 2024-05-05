@@ -13,3 +13,5 @@ function bubbleSort(arr){
 }
 
 console.log(bubbleSort(arr));
+
+//Time complexity O(n2)
