@@ -15,3 +15,6 @@ function selectionSOrt(arr){
 };
 
 console.log(selectionSOrt(arr));
+
+//time complexity O(n2)
+// space complexity O(1)
