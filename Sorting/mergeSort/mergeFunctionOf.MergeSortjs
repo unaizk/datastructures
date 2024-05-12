@@ -1,3 +1,7 @@
+// Merge function of merge sort in Javascript
+
+
+
 let arr = [10,20,40,20,30];
 
 let low = 0;
