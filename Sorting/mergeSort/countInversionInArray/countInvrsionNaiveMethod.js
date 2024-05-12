@@ -18,3 +18,6 @@ function invCount(arr){
 }
 
 console.log(invCount(arr));
+
+//Time complexity = O(n2)
+// Space complexity = O(1)
