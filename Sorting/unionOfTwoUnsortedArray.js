@@ -14,3 +14,6 @@ function unionSize(a,b){
 }
 
 console.log(unionSize(a,b));
+
+// Time complexity = o(n+m);
+// spcae complexity = o(n+m)
